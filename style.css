@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:wght@500;700;900&display=swap');
+
+:root{
+    --clr-viollet:#733FC8;
+    --clr-gray:#48556A;
+    --clr-gray-light:#CFCFCF;
+    --clr-white: #FFFFFF;
+    --clr-black: #19202D;
+    --fw-bold: 600;
+    --fw-regular: 500;
+    --fs-title: 2rem;
+    --fs-comment: 1.3rem;
+    --fs-author: 1.3rem;
+    --fs-verification: 1.1rem;
+}
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.clr-tittle-200{
+    color:#ffffff;
+}
+
+.clr-tittle-400{
+    color: #48556A;
+}
+
+.clr-comment-200{
+    color: #ffffff;
+}
+
+.clr-comment-400{
+    color:#CFCFCF
+}
+
+.clr-comment-600{
+    color: #48556A;
+}
+
+.clr-author-200{
+    color: #ffffff;
+}
+
+.clr-author-400{
+    color:#48556A;
+}
+
+
+
+
+
+img{
+    max-width: 100%;
+}
+    
+html{
+     overflow-x: hidden;
+     font-size: 62.5%;
+}
+    
+body{
+    width: 100vw;
+    min-height: 100vh;
+    font-family: Barlow Semi Condensed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main{
+    
+    display: grid;
+    max-width: 1100px;
+    gap:3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+}
+
+main .box{
+    max-width: 54rem;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+    border-radius: 8px;
+    padding: 2.6rem 3.2rem 3.2rem 3.2rem;
+}
+
+main .box1{
+    grid-column: span 2;
+    background-color: var(--clr-viollet);
+
+}
+
+main .box2{
+    background-color: var(--clr-gray);
+}
+
+main .box3{
+    background-color: var(--clr-white);
+    grid-row: span 2;
+ 
+}
+
+main .box5{
+    background-color: var(--clr-black);
+    grid-column: span 2;
+}
+
+main .box4{
+    background-color: var(--clr-white);
+
+}
+
+
+main .box .profile {
+   display: flex;
+   align-items: center;
+   gap:1.7rem;
+    
+    
+}
+
+main .box .profile .photo{
+    border-radius: 9999px; 
+    border: 2px #A775F1 solid;
+    max-width: 28px;
+    
+}
+
+main .box .profile .author .name{
+    font-size: var(--fs-author);
+   
+    
+}
+
+main .box .profile .author .verification{
+    font-size: var(--fs-verification);
+    font-weight: var(--fw-regular);
+    opacity: 0.5;
+    
+}
+
+main .box .tittle{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-title);
+    padding-bottom: 1.6rem;
+    padding-top: 1.8rem;
+}
+
+
+main .box .comment{
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-comment);
+    line-height: 1.8rem;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    main{
+        grid-template-columns: 1fr;
+        gap:2.4rem;
+        padding: 7rem 2.4rem 7rem 2.4rem;
+    }
+
+   
+    main .box .tittle{
+        padding-bottom: 4rem;
+    }
+
+    main .box1{
+        grid-column: auto;
+    }
+
+    main .box3{
+        grid-row: 5;
+    }
+
+    main .box5{
+        grid-column: auto;
+      
+    }
+    
+}
+
+
+
+
+
+
+
+    
