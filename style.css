@@ -85,8 +85,8 @@ main{
 
 main .box{
     max-width: 54rem;
-    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
     border-radius: 8px;
+    box-shadow: 8px 8px 31px 0px rgba(0,0,0,0.48);
     padding: 2.6rem 3.2rem 3.2rem 3.2rem;
 }
 
